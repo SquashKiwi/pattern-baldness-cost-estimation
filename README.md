@@ -78,4 +78,10 @@ A block Diagram of FEv4:
 | **Key Features**         | Segmentation masks for classification                               | Lightweight CNN model                                               | Advanced architecture with stability and regularization                           |
 | **Special Features**     | U-Net for detailed segmentation                                     | Sparse Categorical Crossentropy                                     | Cosine Annealing, ModelCheckpoint                                                 |
 
-![FEv4 Block Diagram](images/)
+## 🧠 Subclassification Layer
+
+The refined Norwood prediction function refines baldness stage detection by integrating:
+
+- 1️⃣ User inputs – Age, Smoking status, Race.
+- 2️⃣ Weighted calculations – Normalized values influence prediction.
+- 3️⃣ Threshold adjustments – Fine-tunes the model output for personalized stage classification.

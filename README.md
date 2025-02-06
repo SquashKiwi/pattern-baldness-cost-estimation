@@ -62,7 +62,7 @@ We developed three models for Male Pattern Baldness (MPB) classification:
 Unlike FE v1 and FE v4, which classify directly from images, the Annotation Model first segments the scalp and hair using U-Net, creating a preprocessed mask. This mask is then classified separately, making the approach more interpretable but requiring an additional annotation step.
 
 A block Diagram of FEv4:
-![](images/FEv4_block.png)
+![FEv4 Block Diagram](images/FEv4_block.png)
 
 ## 🔬 Model Comparison
 
@@ -74,9 +74,6 @@ A block Diagram of FEv4:
 | **Training Method**      | Adam Optimizer, Loss function not specified                         | Adam Optimizer, Sparse Categorical Crossentropy loss                | Cosine Annealing, Early Stopping, ModelCheckpoint                                 |
 | **Output**               | Segmentation masks with pixel-wise classes: background, hair, scalp | Multi-class classification                                          | Multi-class classification (4 classes for baldness stages)                        |
 | **Performance Accuracy** | 63%                                                                 | 83%                                                                 | **96%**                                                                           |
-| **Model Enhancements**   | Focused on segmentation with U-Net                                  | Baseline CNN model                                                  | Added Batch Norm, Dropout, Cosine Annealing for Learning Rate                     |
-| **Key Features**         | Segmentation masks for classification                               | Lightweight CNN model                                               | Advanced architecture with stability and regularization                           |
-| **Special Features**     | U-Net for detailed segmentation                                     | Sparse Categorical Crossentropy                                     | Cosine Annealing, ModelCheckpoint                                                 |
 
 ## 🧠 Subclassification Layer
 

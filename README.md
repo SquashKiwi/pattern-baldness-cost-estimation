@@ -6,16 +6,16 @@ _"Hair Today, Gone Tomorrow: A Deep Dive into AI-Driven Baldness Detection"_
 
 Male Pattern Baldness (MPB), or androgenetic alopecia, affects 50% of men by the age of 50 and can begin as early as the teenage years. However, current diagnosis methods rely on manual inspection and subjective assessments, leading to inconsistencies and late detection.
 
-This project introduces an AI-powered solution that automates MPB classification based on the Norwood Scale, eliminating the need for expensive genetic testing and dermatology consultations.
+This project introduces an AI-powered solution that automates MPB classification based on the Norwood Scale(a standard measure of the severity of male pattern baldness), eliminating the need for expensive genetic testing and dermatology consultations.
 
 ![the norwood scale](images/norwood_scale.png)
 
 ## 🏆 Key Features
 
-- ✔ AI-based Classification: Uses deep learning to detect MPB stages.
-- ✔ Non-Invasive & Accessible: No need for expensive medical tests.
-- ✔ Scalable & Efficient: Can process large datasets with minimal human intervention.
-- ✔ User Input Refinement: Adjusts results based on age, smoking habits, and race for a more personalized diagnosis.
+- 🔹 AI-based Classification: Uses deep learning to detect MPB stages.
+- 🔹 Non-Invasive & Accessible: No need for expensive medical tests.
+- 🔹 Scalable & Efficient: Can process large datasets with minimal human intervention.
+- 🔹 User Input Refinement: Adjusts results based on age, smoking habits, and race for a more personalized diagnosis.
 
 ## ✅ Objectives
 
@@ -62,6 +62,7 @@ We developed three models for Male Pattern Baldness (MPB) classification:
 Unlike FE v1 and FE v4, which classify directly from images, the Annotation Model first segments the scalp and hair using U-Net, creating a preprocessed mask. This mask is then classified separately, making the approach more interpretable but requiring an additional annotation step.
 
 A block Diagram of FEv4:
+<br>
 ![FEv4 Block Diagram](images/FEv4_block.png)
 
 ## 🔬 Model Comparison

@@ -63,6 +63,7 @@ Unlike FE v1 and FE v4, which classify directly from images, the Annotation Mode
 
 A block Diagram of FEv4:
 <br>
+
 ![FEv4 Block Diagram](images/FEv4_block.png)
 
 ## 🔬 Model Comparison
@@ -77,6 +78,7 @@ A block Diagram of FEv4:
 | **Performance Accuracy** | 63%                                                                 | 83%                                                                 | **96%**                                                                           |
 
 <br>
+
 ![ROC Curves](images/roc_curves.png)
 
 ## 🧠 Subclassification Layer

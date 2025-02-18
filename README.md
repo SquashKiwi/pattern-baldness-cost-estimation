@@ -12,17 +12,17 @@ This project introduces an AI-powered solution that automates MPB classification
 
 ## 🏆 Key Features
 
-- ✔ AI-based Classification: Uses deep learning to detect MPB stages.
-- ✔ Non-Invasive & Accessible: No need for expensive medical tests.
-- ✔ Scalable & Efficient: Can process large datasets with minimal human intervention.
-- ✔ User Input Refinement: Adjusts results based on age, smoking habits, and race for a more personalized diagnosis.
+✔ AI-based Classification: Uses deep learning to detect MPB stages. <br>
+✔ Non-Invasive & Accessible: No need for expensive medical tests. <br>
+✔ Scalable & Efficient: Can process large datasets with minimal human intervention. <br>
+✔ User Input Refinement: Adjusts results based on age, smoking habits, and race for a more personalized diagnosis. <br>
 
 ## ✅ Objectives
 
-- 🔹 Automates phenotypic analysis of MPB stages using the Norwood Scale.
-- 🔹 Uses deep learning models for classification.
-- 🔹 Provides a reliable, accessible, and cost-effective AI-driven tool.
-- 🔹 Provides the user with a cost estimate of transplant surgeries in various regions.
+🔹 Automates phenotypic analysis of MPB stages using the Norwood Scale. <br>
+🔹 Uses deep learning models for classification. <br>
+🔹 Provides a reliable, accessible, and cost-effective AI-driven tool. <br>
+🔹 Provides the user with a cost estimate of transplant surgeries in various regions. <br>
 
 ## 📊 Data Overview & EDA
 

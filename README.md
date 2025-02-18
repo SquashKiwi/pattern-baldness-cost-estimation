@@ -8,7 +8,7 @@ Male Pattern Baldness (MPB), or androgenetic alopecia, affects 50% of men by the
 
 This project introduces an AI-powered solution that automates MPB classification based on the Norwood Scale, eliminating the need for expensive genetic testing and dermatology consultations.
 
-![the norwood scale](images/norwood_scale.png)
+![the norwood scale](assets/norwood_scale.png)
 
 ## 🏆 Key Features
 
@@ -28,11 +28,11 @@ This project introduces an AI-powered solution that automates MPB classification
 
 ### 📌 Initial Dataset:
 
-🔹 125 high-resolution scalp images (~32 per group).
+🔹 125 high-resolution scalp assets (~32 per group).
 
 ### 📌 Data Augmentation:
 
-- 🔹 Expanded to 775 images using:
+- 🔹 Expanded to 775 assets using:
 
   - Brightness & saturation adjustments
   - Geometric transformations (flipping, rotation)
@@ -49,7 +49,7 @@ This project introduces an AI-powered solution that automates MPB classification
 - ✅ Smoking & Baldness: Moderate correlation (r=0.64) – notable association.
 - ✅ Race & Baldness: Negative correlation (r=-0.12) – possibly dataset-dependent.
 
-![correlation analysis](images/correlation_matrix.png)
+![correlation analysis](assets/correlation_matrix.png)
 
 ## 🧠 Model Overview
 
@@ -59,10 +59,10 @@ We developed three models for Male Pattern Baldness (MPB) classification:
 2. FEv1
 3. FEv4
 
-Unlike FE v1 and FE v4, which classify directly from images, the Annotation Model first segments the scalp and hair using U-Net, creating a preprocessed mask. This mask is then classified separately, making the approach more interpretable but requiring an additional annotation step.
+Unlike FE v1 and FE v4, which classify directly from assets, the Annotation Model first segments the scalp and hair using U-Net, creating a preprocessed mask. This mask is then classified separately, making the approach more interpretable but requiring an additional annotation step.
 
 A block Diagram of FEv4:
-![FEv4 Block Diagram](images/FEv4_block.png)
+![FEv4 Block Diagram](assets/FEv4_block.png)
 
 ## 🔬 Model Comparison
 
@@ -75,6 +75,11 @@ A block Diagram of FEv4:
 | **Output**               | Segmentation masks with pixel-wise classes: background, hair, scalp | Multi-class classification                                          | Multi-class classification (4 classes for baldness stages)                        |
 | **Performance Accuracy** | 63%                                                                 | 83%                                                                 | **96%**                                                                           |
 
+<<<<<<< Updated upstream
+=======
+![ROC Curves](assets/roc_curves.png)
+
+>>>>>>> Stashed changes
 ## 🧠 Subclassification Layer
 
 The refined Norwood prediction function refines baldness stage detection by integrating:

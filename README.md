@@ -75,8 +75,6 @@ A block Diagram of FEv4:
 | **Output**               | Segmentation masks with pixel-wise classes: background, hair, scalp | Multi-class classification                                          | Multi-class classification (4 classes for baldness stages)                        |
 | **Performance Accuracy** | 63%                                                                 | 83%                                                                 | **96%**                                                                           |
 
-![ROC Curves](images/roc_curves.png)
-
 ## 🧠 Subclassification Layer
 
 The refined Norwood prediction function refines baldness stage detection by integrating:

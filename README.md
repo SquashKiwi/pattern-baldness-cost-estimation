@@ -6,33 +6,33 @@ _"Hair Today, Gone Tomorrow: A Deep Dive into AI-Driven Baldness Detection"_
 
 Male Pattern Baldness (MPB), or androgenetic alopecia, affects 50% of men by the age of 50 and can begin as early as the teenage years. However, current diagnosis methods rely on manual inspection and subjective assessments, leading to inconsistencies and late detection.
 
-This project introduces an AI-powered solution that automates MPB classification based on the Norwood Scale(a standard measure of the severity of male pattern baldness), eliminating the need for expensive genetic testing and dermatology consultations.
+This project introduces an AI-powered solution that automates MPB classification based on the Norwood Scale (a standard measure of the severity of male pattern baldness), eliminating the need for expensive genetic testing and dermatology consultations.
 
-![the norwood scale](images/norwood_scale.png)
+![the norwood scale](assets/norwood_scale.png)
 
 ## 🏆 Key Features
 
-- 🔹 AI-based Classification: Uses deep learning to detect MPB stages.
-- 🔹 Non-Invasive & Accessible: No need for expensive medical tests.
-- 🔹 Scalable & Efficient: Can process large datasets with minimal human intervention.
-- 🔹 User Input Refinement: Adjusts results based on age, smoking habits, and race for a more personalized diagnosis.
+✔ AI-based Classification: Uses deep learning to detect MPB stages. <br>
+✔ Non-Invasive & Accessible: No need for expensive medical tests. <br>
+✔ Scalable & Efficient: Can process large datasets with minimal human intervention. <br>
+✔ User Input Refinement: Adjusts results based on age, smoking habits, and race for a more personalized diagnosis. <br>
 
 ## ✅ Objectives
 
-- 🔹 Automates phenotypic analysis of MPB stages using the Norwood Scale.
-- 🔹 Uses deep learning models for classification.
-- 🔹 Provides a reliable, accessible, and cost-effective AI-driven tool.
-- 🔹 Provides the user with a cost estimate of transplant surgeries in various regions.
+🔹 Automates phenotypic analysis of MPB stages using the Norwood Scale. <br>
+🔹 Uses deep learning models for classification. <br>
+🔹 Provides a reliable, accessible, and cost-effective AI-driven tool. <br>
+🔹 Provides the user with a cost estimate of transplant surgeries in various regions. <br>
 
 ## 📊 Data Overview & EDA
 
 ### 📌 Initial Dataset:
 
-🔹 125 high-resolution scalp images (~32 per group).
+🔹 125 high-resolution scalp assets (~32 per group).
 
 ### 📌 Data Augmentation:
 
-- 🔹 Expanded to 775 images using:
+- 🔹 Expanded to 775 assets using:
 
   - Brightness & saturation adjustments
   - Geometric transformations (flipping, rotation)
@@ -49,7 +49,7 @@ This project introduces an AI-powered solution that automates MPB classification
 - ✅ Smoking & Baldness: Moderate correlation (r=0.64) – notable association.
 - ✅ Race & Baldness: Negative correlation (r=-0.12) – possibly dataset-dependent.
 
-![correlation analysis](images/correlation_matrix.png)
+![correlation analysis](assets/correlation_matrix.png)
 
 ## 🧠 Model Overview
 
@@ -59,12 +59,11 @@ We developed three models for Male Pattern Baldness (MPB) classification:
 2. FEv1
 3. FEv4
 
-Unlike FE v1 and FE v4, which classify directly from images, the Annotation Model first segments the scalp and hair using U-Net, creating a preprocessed mask. This mask is then classified separately, making the approach more interpretable but requiring an additional annotation step.
+Unlike FE v1 and FE v4, which classify directly from assets, the Annotation Model first segments the scalp and hair using U-Net, creating a preprocessed mask. This mask is then classified separately, making the approach more interpretable but requiring an additional annotation step.
 
 A block Diagram of FEv4:
 <br>
-
-![FEv4 Block Diagram](images/FEv4_block.png)
+![FEv4 Block Diagram](assets/FEv4_block.png)
 
 ## 🔬 Model Comparison
 
@@ -78,8 +77,7 @@ A block Diagram of FEv4:
 | **Performance Accuracy** | 63%                                                                 | 83%                                                                 | **96%**                                                                           |
 
 <br>
-
-![ROC Curves](images/roc_curves.png)
+![ROC Curves](assets/roc_curves.png)
 
 ## 🧠 Subclassification Layer
 

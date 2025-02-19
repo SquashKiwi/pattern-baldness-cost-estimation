@@ -77,6 +77,7 @@ A block Diagram of FEv4:
 | **Performance Accuracy** | 63%                                                                 | 83%                                                                 | **96%**                                                                           |
 
 <br>
+
 ![ROC Curves](assets/roc_curves.png)
 
 ## 🧠 Subclassification Layer

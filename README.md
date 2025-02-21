@@ -6,7 +6,7 @@ _"Hair Today, Gone Tomorrow: A Deep Dive into AI-Driven Baldness Detection"_
 
 Male Pattern Baldness (MPB), or androgenetic alopecia, affects 50% of men by the age of 50 and can begin as early as the teenage years. However, current diagnosis methods rely on manual inspection and subjective assessments, leading to inconsistencies and late detection.
 
-This project introduces an AI-powered solution that automates MPB classification based on the Norwood Scale, eliminating the need for expensive genetic testing and dermatology consultations.
+This project introduces an AI-powered solution that automates MPB classification based on the Norwood Scale (a standard measure of the severity of male pattern baldness), eliminating the need for expensive genetic testing and dermatology consultations.
 
 ![the norwood scale](assets/norwood_scale.png)
 
@@ -62,6 +62,7 @@ We developed three models for Male Pattern Baldness (MPB) classification:
 Unlike FE v1 and FE v4, which classify directly from assets, the Annotation Model first segments the scalp and hair using U-Net, creating a preprocessed mask. This mask is then classified separately, making the approach more interpretable but requiring an additional annotation step.
 
 A block Diagram of FEv4:
+<br>
 ![FEv4 Block Diagram](assets/FEv4_block.png)
 
 ## 🔬 Model Comparison
@@ -74,6 +75,8 @@ A block Diagram of FEv4:
 | **Training Method**      | Adam Optimizer, Loss function not specified                         | Adam Optimizer, Sparse Categorical Crossentropy loss                | Cosine Annealing, Early Stopping, ModelCheckpoint                                 |
 | **Output**               | Segmentation masks with pixel-wise classes: background, hair, scalp | Multi-class classification                                          | Multi-class classification (4 classes for baldness stages)                        |
 | **Performance Accuracy** | 63%                                                                 | 83%                                                                 | **96%**                                                                           |
+
+<br>
 
 ![ROC Curves](assets/roc_curves.png)
 

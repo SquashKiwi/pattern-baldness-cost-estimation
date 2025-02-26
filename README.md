@@ -2,6 +2,11 @@
 
 _"Hair Today, Gone Tomorrow: A Deep Dive into AI-Driven Baldness Detection"_
 
+## Deployments
+
+[![Open in Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-lg.svg)](https://huggingface.co/spaces/anwesha-05/FEv4_host)
+
+
 ## 🚀 Project Overview
 
 Male Pattern Baldness (MPB), or androgenetic alopecia, affects 50% of men by the age of 50 and can begin as early as the teenage years. However, current diagnosis methods rely on manual inspection and subjective assessments, leading to inconsistencies and late detection.

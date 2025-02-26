@@ -32,10 +32,9 @@ This project introduces an AI-powered solution that automates MPB classification
 
 ### 📌 Data Augmentation:
 
-- 🔹 Expanded to 775 assets using:
-
-  - Brightness & saturation adjustments
-  - Geometric transformations (flipping, rotation)
+-  Expanded to 775 assets using:
+- Brightness & saturation adjustments
+- Geometric transformations (flipping, rotation)
 
 ### 📌 Key Features:
 

@@ -4,8 +4,9 @@ _"Hair Today, Gone Tomorrow: A Deep Dive into AI-Driven Baldness Detection"_
 
 ## Deployments
 
-[![Open in Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-lg.svg)](https://huggingface.co/spaces/anwesha-05/FEv4_host)
+<!-- [![Open in Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-lg.svg)](https://huggingface.co/spaces/anwesha-05/FEv4_host) -->
 
+[![Open on Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](fev4-host.streamlit.app)
 
 ## 🚀 Project Overview
 
@@ -37,7 +38,7 @@ This project introduces an AI-powered solution that automates MPB classification
 
 ### 📌 Data Augmentation:
 
--  Expanded to 775 assets using:
+- Expanded to 775 assets using:
 - Brightness & saturation adjustments
 - Geometric transformations (flipping, rotation)
 

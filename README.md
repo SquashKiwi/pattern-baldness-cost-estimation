@@ -6,7 +6,7 @@ _"Hair Today, Gone Tomorrow: A Deep Dive into AI-Driven Baldness Detection"_
 
 <!-- [![Open in Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-lg.svg)](https://huggingface.co/spaces/anwesha-05/FEv4_host) -->
 
-[![Open on Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](fev4-host.streamlit.app)
+[![Open on Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://fev4-host.streamlit.app)
 
 ## 🚀 Project Overview
 
